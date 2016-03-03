@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.steinsvik.steinsvik_project_1.fragment.NavigationFragment">
+
+    <FrameLayout
+        android:id="@+id/iconTitle"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:background="@color/colorDarkLight">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconTitle"
+        android:layout_marginLeft="15dp" />
+
+
+</RelativeLayout>
